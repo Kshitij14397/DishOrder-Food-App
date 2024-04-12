@@ -24,7 +24,7 @@ describe("ContactUs Page Test Case", () => {
     // Will get rendered on the jsdom
     render(<ContactUs />);
 
-    const heading = screen.getByRole("heading");
+    const heading = screen.getByRole("heading", { name: "Contact Us Page" });
     expect(heading).toBeInTheDocument();
   });
 
